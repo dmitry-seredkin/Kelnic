@@ -1,0 +1,129 @@
+
+.card {
+  max-height: 522px;
+  width: 320px;
+  border-radius: 3px;
+  border: 1px solid $dark-green;
+
+  position: relative;
+}
+
+.card_border-color_yellow {
+  border-color: $sand-yellow;
+}
+
+.card_border-color_grey {
+  border-color: $grey;
+}
+
+.card__wrap {
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__body {
+  //max-height: 180px;
+
+  padding: 0 40px 0 52px;
+  margin-bottom: 26px;
+}
+
+.card__header {
+  min-height: 60px;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $dark-green;
+}
+
+.card__info {
+  color: black;
+
+  margin: 20px 0 35px;
+
+  display: flex;
+  align-items: center;
+}
+
+.card__rectangle {
+  height: 33px;
+  width: 3px;
+  background-color: $dark-blue;
+  border-radius: 1.5px;
+
+  margin-right: 8px;
+}
+
+.card__style {
+  max-width: 75px;
+
+  font-size: 16px;
+  color: $dark-blue;
+}
+
+.card__square {
+  max-width: 62px;
+
+  font-size: 18px;
+}
+
+.card__floor {
+  max-width: 35px;
+
+  font-size: 18px;
+}
+
+.card__price {
+  font-size: 24px;
+  color: $black;
+}
+
+.card__status {
+  height: 36px;
+  background-color: $dark-green;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 36px;
+
+}
+
+.card__status_bg-color_yellow {
+  background-color: $sand-yellow;
+}
+
+.card__status_bg-color_grey {
+  background-color: $grey;
+}
+
+.card__text_font-size_13 {
+  font-size: 13px;
+}
+
+.small {
+  font-size: 12px;
+  vertical-align: text-top;
+}
+
+.card__discount-block {
+  font-size: 12px;
+  font-weight: 500;
+
+  position: absolute;
+  top: 18px;
+  left: 19px;
+}
+
+.card__discount {
+  height: 18px;
+  width: 34px;
+  background-color: $red;
+  border-radius: 3px;
+
+  line-height: 18px;
+  text-align: center;
+}

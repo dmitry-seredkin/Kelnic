@@ -1,0 +1,42 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.checkbox__old-mark {
+  position: absolute;
+  opacity: 0;
+
+  &:checked + .checkbox__new-mark:after {
+    display: block;
+  }
+}
+
+.checkbox__new-mark {
+  min-height: 18px;
+  min-width: 18px;
+  border-radius: 2px;
+  background-color: $white;
+
+  position: relative;
+
+  &:after {
+    content: '';
+
+    height: 11px;
+    width: 5px;
+    border: solid $dark-blue;
+    border-width: 0 2px 2px 0;
+    transform: rotate(40deg);
+
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    display: none;
+  }
+}
+
+.checkbox__text {
+  padding-left: 10px;
+}

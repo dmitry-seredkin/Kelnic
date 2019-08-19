@@ -1,0 +1,24 @@
+@import "helpers/reset";
+@import "helpers/variables";
+
+@import "fonts/fonts";
+
+@import "common.blocks/header/header";
+@import "common.blocks/card/card";
+@import "common.blocks/apartments/apartments";
+@import "common.blocks/checkbox/checkbox";
+@import "common.blocks/form-block/form-block";
+
+
+.app {
+  background-color: $light-yellow;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  color: $white;
+}
+
+.app__content {
+  max-width: 1280px;
+
+  margin: auto;
+}

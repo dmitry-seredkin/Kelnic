@@ -1,0 +1,29 @@
+
+.apartments {
+  background-color: $white;
+
+  padding: 75px 106px;
+}
+
+.apartments__body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.apartments__flat {
+  margin-bottom: 55px;
+}
+
+.apartments__button {
+  height: 72px;
+  background-color: $dark-blue;
+  border-radius: 3px;
+
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: $white;
+  text-transform: uppercase;
+
+  padding: 0 190px;
+}

@@ -1,0 +1,41 @@
+
+.header {
+  height: 125px;
+  background-color: #002f2f;
+
+  padding: 0 160px 0 105px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  max-height: 85px;
+}
+
+.header__list {
+  display: flex;
+
+  margin-left: 125px;
+}
+
+.header__anchor {
+  font-size: 24px;
+  color: $header-text-color;
+
+  margin-right: 50px;
+}
+
+.header__number {
+  font-size: 32px;
+}
+
+.header__text {
+  font-size: 20px;
+}

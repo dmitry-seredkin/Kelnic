@@ -1,0 +1,11 @@
+include ../checkbox/checkbox
+
+section.form-block
+    .form-block__agitation
+        h2.form-block__h2 Успей купить!
+        p.form-block__text Подпишись и успей словить все акции
+    form.form-block__form
+        fieldset.form-block__wrap
+            input.form-block__input(type="email" placeholder="E-mail")
+            +checkbox("подписаться на новости")
+        button.form-block__button(type="submit") Подписаться

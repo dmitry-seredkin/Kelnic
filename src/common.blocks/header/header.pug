@@ -1,0 +1,14 @@
+
+-var navArray = "Объекты; Компании; Как купить; Агентам; Регионам; Акции; Контакты".split('; ')
+
+header.header
+    nav.header__nav
+        img.header__logo(src="./images/logo.svg" alt="Логотип")
+        nav
+            ul.header__list
+                each elem in navArray
+                    li
+                        a.header__anchor(href="")= elem
+    .header__contact
+        p.header__number 8 888 88 88 98
+        p.header__text Звони скорее!

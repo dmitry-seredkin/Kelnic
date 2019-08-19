@@ -1,0 +1,43 @@
+mixin card(options)
+
+    -
+        var i = options.type ? options.type : 0
+        var typesArray = [
+            {
+                status: 'Свободно',
+                cardClass: 'card',
+                statusClass: 'card__status'
+            },
+            {
+                status: 'Забронированно',
+                cardClass: 'card card_border-color_yellow',
+                statusClass: 'card__status card__status_bg-color_yellow'
+            },
+            {
+                status: 'Продано',
+                cardClass: 'card card_border-color_grey',
+                statusClass: 'card__status card__status_bg-color_grey'
+            }
+        ]
+
+    div(class=typesArray[i].cardClass)
+        .card__wrap
+            img(src=require(`./images/rooms/${options.img}.png`))
+        .card__body
+            h3.card__header= options.header
+            .card__info
+                p.card__rectangle
+                p.card__style= options.style
+                p.card__square #{options.square}м<sup class="small">2</sup>
+                    span.card__text_font-size_13  площадь
+                p.card__floor= options.floorNumber
+                    span.card__text_font-size_13  этаж
+            p.card__price #{options.price} руб.
+        p(class=typesArray[i].statusClass)= typesArray[i].status
+
+        if options.discount
+            .card__discount-block
+                p.card__discount -#{options.discount}%
+                if options.shock
+                    p.card__shock Шок цена!
+

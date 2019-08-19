@@ -1,0 +1,15 @@
+
+doctype html
+html
+    head
+        title Kelnic Studios
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href=`${htmlWebpackPlugin.files.chunks.main.css}`)
+    body
+        .app
+            include common.blocks/header/header
+            main.app__content
+                include common.blocks/apartments/apartments
+                include common.blocks/form-block/form-block
+        script(src=`${htmlWebpackPlugin.files.chunks.main.entry}`)
