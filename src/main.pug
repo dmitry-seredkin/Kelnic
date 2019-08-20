@@ -6,10 +6,13 @@ html
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, initial-scale=1")
         link(rel="stylesheet" href=`${htmlWebpackPlugin.files.chunks.main.css}`)
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" )
     body
         .app
             include common.blocks/header/header
             main.app__content
                 include common.blocks/apartments/apartments
                 include common.blocks/form-block/form-block
+            .app__button
+                include common.blocks/up-button/up-button
         script(src=`${htmlWebpackPlugin.files.chunks.main.entry}`)

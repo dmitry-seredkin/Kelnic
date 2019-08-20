@@ -1,4 +1,4 @@
 
 import './style.scss';
 
-console.log('Begin');
+import './common.blocks/up-button/up-button';

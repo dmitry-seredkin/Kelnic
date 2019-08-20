@@ -8,6 +8,8 @@
 @import "common.blocks/apartments/apartments";
 @import "common.blocks/checkbox/checkbox";
 @import "common.blocks/form-block/form-block";
+@import "common.blocks/up-button/up-button";
+@import "common.blocks/star/star";
 
 
 .app {
@@ -15,10 +17,23 @@
 
   font-family: "Open Sans", Arial, sans-serif;
   color: $white;
+
+  position: relative;
 }
 
 .app__content {
   max-width: 1280px;
 
   margin: auto;
+}
+
+.app__button {
+  position: absolute;
+  right: 110px;
+
+  display: none;
+}
+
+.app__button_visible {
+  display: block;
 }

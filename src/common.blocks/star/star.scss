@@ -1,0 +1,22 @@
+
+.star {
+  user-select: none;
+}
+
+.star__checkbox {
+  position: absolute;
+  opacity: 0;
+
+  &:checked + .star__icon:after {
+    content: 'star';
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.star__icon {
+  color: $sand-yellow;
+
+  position: relative;
+}
