@@ -1,18 +1,19 @@
+const getData = require('./data').getData();
 
 const express = require('express');
 const cors = require('cors');
 const app = express();
 
-let obj = {
-  man: 1,
-  woman: 0
-};
 
 app.use(cors());
 
 app.get('/', function (req, res) {
-  console.log('get');
-  res.json(JSON.stringify(obj));
+  res.send('hi');
+});
+
+app.get('/more_flats', function (req, res) {
+  console.log('get flats');
+  res.json(getData());
 });
 
 app.listen(3000, function () {

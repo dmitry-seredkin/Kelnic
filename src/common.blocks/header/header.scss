@@ -1,9 +1,10 @@
 
 .header {
-  height: 125px;
+  height: 126px;
   background-color: #002f2f;
+  border-bottom: 1px solid $light-green;
 
-  padding: 0 160px 0 105px;
+  padding: 0 160px 0 106px;
 
   display: flex;
   align-items: center;
@@ -28,12 +29,27 @@
 .header__anchor {
   font-size: 24px;
   color: $header-text-color;
+  letter-spacing: 0.03em;
 
-  margin-right: 50px;
+  margin-right: 49px;
+
+  &:hover {
+    color: $toxic-green;
+  }
+
+  &:active {
+    color: $light-green;
+  }
+}
+
+.header__contact {
+  color: $white;
 }
 
 .header__number {
   font-size: 32px;
+  line-height: 45px;
+  letter-spacing: 0;
 }
 
 .header__text {

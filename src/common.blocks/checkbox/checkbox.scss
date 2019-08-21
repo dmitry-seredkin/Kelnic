@@ -2,6 +2,14 @@
   display: flex;
   align-items: center;
   user-select: none;
+
+  &:hover > .checkbox__new-mark {
+    background-color: orange;
+
+    &:after {
+      border-color: white;
+    }
+  }
 }
 
 .checkbox__old-mark {
@@ -28,15 +36,19 @@
     width: 5px;
     border: solid $dark-blue;
     border-width: 0 2px 2px 0;
-    transform: rotate(40deg);
+    transform: rotate(35deg) skew(0, 15deg);
+
 
     position: absolute;
     left: 6px;
-    top: 2px;
+    top: 1px;
     display: none;
   }
 }
 
 .checkbox__text {
+  font-size: 18px;
+  letter-spacing: 0.035em;
+
   padding-left: 10px;
 }

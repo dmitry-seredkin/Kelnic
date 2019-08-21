@@ -21,4 +21,12 @@
 
     transform: rotate(45deg);
   }
+
+  &:hover {
+    background-color: $red-yellow;
+  }
+
+  &:active {
+    background-color: $grey;
+  }
 }

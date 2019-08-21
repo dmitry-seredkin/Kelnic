@@ -1,9 +1,9 @@
 
--var navArray = "Объекты; Компании; Как купить; Агентам; Регионам; Акции; Контакты".split('; ')
+-var navArray = "Объекты; Компания; Как купить; Агентам; Регионам; Акции; Контакты".split('; ')
 
 header.header
     nav.header__nav
-        img.header__logo(src="./images/logo.svg" alt="Логотип")
+        img.header__logo(src=require(`./logo.svg`) alt="Логотип")
         nav
             ul.header__list
                 each elem in navArray

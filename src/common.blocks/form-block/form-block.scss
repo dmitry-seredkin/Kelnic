@@ -1,6 +1,6 @@
 
 .form-block {
-  min-height: 196px;
+  min-height: 197px;
   background-color: $dark-blue;
   border-radius: 3px;
   border-top: 1px solid $light-blue;
@@ -10,20 +10,24 @@
 }
 
 .form-block__agitation {
-  padding: 55px 0 0 50px;
+  padding: 50px 0 0 51px;
 }
 
 .form-block__h2 {
   font-size: 34px;
-  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 15px;
 }
 
 .form-block__text {
   font-size: 18px;
+  letter-spacing: 0.035em;
 }
 
 .form-block__form {
-  padding: 63px 105px 0 0;
+  padding: 63px 106px 0 0;
 
   display: flex;
 }
@@ -43,16 +47,32 @@
 
   &::placeholder {
     color: $dark-blue;
+    letter-spacing: 0.07em;
+  }
+
+  &:hover, &:focus {
+    border: 1px solid $light-blue;
   }
 }
 
 .form-block__button {
-  height: 47px;
+  height: 48px;
+  min-width: 214px;
   background-color: $sand-yellow;
   border-radius: 2px;
 
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: $white;
 
-  padding: 0 40px 0 47px;
+  //padding: 0 40px 0 47px;
   margin-left: 54px;
+
+  &:hover {
+    background-color: $red-yellow;
+  }
+
+  &:active {
+    background-color: $grey;
+  }
 }

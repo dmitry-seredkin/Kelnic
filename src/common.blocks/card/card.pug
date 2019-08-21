@@ -22,13 +22,13 @@ mixin card(options)
 
     div(class=typesArray[i].cardClass)
         .card__wrap
-            img(src=require(`./images/rooms/${options.img}.png`))
+            img(src=require(`./images/rooms/${options.img}.png`) alt="План квартиры")
         .card__body
             h3.card__header= options.header
             .card__info
                 p.card__rectangle
                 p.card__style= options.style
-                p.card__square #{options.square}м<sup class="small">2</sup>
+                p.card__square #{options.square} м<sup class="small">2</sup>
                     span.card__text_font-size_13  площадь
                 p.card__floor= options.floorNumber
                     span.card__text_font-size_13  этаж
@@ -37,9 +37,10 @@ mixin card(options)
 
         if options.discount
             .card__discount-block
-                p.card__discount -#{options.discount}%
+                span.card__box.card__box_width_34 -#{options.discount}%
                 if options.shock
-                    p.card__shock Шок цена!
+                    span.card__box.card__box_margin-left_19 Шок цена!
 
-        include ../star/star
+        .card__star
+            include ../star/star
 

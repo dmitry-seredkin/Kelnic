@@ -5,6 +5,8 @@
   border-radius: 3px;
   border: 1px solid $dark-green;
 
+  text-align: left;
+
   position: relative;
 }
 
@@ -24,8 +26,6 @@
 }
 
 .card__body {
-  //max-height: 180px;
-
   padding: 0 40px 0 52px;
   margin-bottom: 26px;
 }
@@ -36,13 +36,14 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
+  letter-spacing: 0.05em;
   color: $dark-green;
 }
 
 .card__info {
   color: black;
 
-  margin: 20px 0 35px;
+  margin: 17px 0 35px;
 
   display: flex;
   align-items: center;
@@ -58,16 +59,19 @@
 }
 
 .card__style {
-  max-width: 75px;
+  max-width: 80px;
 
   font-size: 16px;
   color: $dark-blue;
+  line-height: 18px;
 }
 
 .card__square {
-  max-width: 62px;
+  max-width: 70px;
 
   font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0;
 }
 
 .card__floor {
@@ -79,6 +83,7 @@
 .card__price {
   font-size: 24px;
   color: $black;
+  letter-spacing: 0;
 }
 
 .card__status {
@@ -114,16 +119,34 @@
   font-weight: 500;
 
   position: absolute;
-  top: 18px;
+  top: 16px;
   left: 19px;
 }
 
-.card__discount {
+.card__box {
   height: 18px;
-  width: 34px;
   background-color: $red;
   border-radius: 3px;
 
   line-height: 18px;
   text-align: center;
+  text-transform: uppercase;
+
+  padding: 0 3px;
+
+  display: inline-block;
+}
+
+.card__box_width_34 {
+  width: 34px;
+}
+
+.card__box_margin-left_19 {
+  margin-left: 19px;
+}
+
+.card__star {
+  position: absolute;
+  top: 16px;
+  right: 14px;
 }

@@ -2,7 +2,25 @@
 .apartments {
   background-color: $white;
 
-  padding: 75px 106px;
+  text-align: center;
+
+  padding: 29px 105px 75px;
+}
+
+.apartments__head {
+  font-size: 14px;
+  color: $dark-green;
+  text-align: left;
+
+  margin-bottom: 48px;
+}
+
+.apartments__sort-button {
+  background-color: transparent;
+
+  color: inherit;
+
+  padding-left: 10px;
 }
 
 .apartments__body {
@@ -12,18 +30,33 @@
 }
 
 .apartments__flat {
-  margin-bottom: 55px;
+  margin-bottom: 54px;
 }
 
 .apartments__button {
   height: 72px;
+  min-width: 530px;
   background-color: $dark-blue;
   border-radius: 3px;
 
   font-size: 14px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.10em;
   color: $white;
   text-transform: uppercase;
 
-  padding: 0 190px;
+  //padding: 0 190px;
+
+  display: inline-block;
+
+  &:hover {
+    background-color: $blue;
+  }
+
+  &:active {
+    background-color: $light-blue;
+  }
+}
+
+.apartments__button_hidden {
+  display: none;
 }

@@ -21,7 +21,7 @@ module.exports = {
             },
             {
                 test: /\.(woff(2)?|ttf|eot|svg)$/,
-                exclude: path.resolve(__dirname, './src/images'),
+                exclude: [path.resolve(__dirname, './src/images'), path.resolve(__dirname, './src/common.blocks')],
                 use: [
                     {
                         loader: 'file-loader',

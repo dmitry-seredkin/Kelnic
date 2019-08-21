@@ -17,14 +17,31 @@
 
   font-family: "Open Sans", Arial, sans-serif;
   color: $white;
+  letter-spacing: 0.03em;
+
+  padding-bottom: 100px;
 
   position: relative;
+}
+
+.app__h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: $dark-green;
+  letter-spacing: 0.04em;
+
+  margin: 66px 0 66px 107px;
 }
 
 .app__content {
   max-width: 1280px;
 
+
   margin: auto;
+}
+
+.app__form {
+  margin-top: 71px;
 }
 
 .app__button {

@@ -3,6 +3,6 @@ import './style.scss';
 
 import './common.blocks/up-button/up-button';
 
-import apartments from './common.blocks/apartments/apartments';
+import getMoreApartments from './common.blocks/apartments/apartments';
 
-apartments();
+getMoreApartments();
