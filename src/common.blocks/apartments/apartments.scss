@@ -5,6 +5,14 @@
   text-align: center;
 
   padding: 29px 105px 75px;
+
+  @include mq-under-1024 {
+    padding: 20px 40px 30px;
+  }
+
+  @include mq-under-768 {
+    padding: 10px 10px 20px;
+  }
 }
 
 .apartments__head {
@@ -13,6 +21,18 @@
   text-align: left;
 
   margin-bottom: 48px;
+
+  display: flex;
+  align-items: center;
+
+  @include mq-under-1024 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  @include mq-under-768 {
+    margin-bottom: 10px;
+  }
 }
 
 .apartments__sort-button {
@@ -28,6 +48,8 @@
   width: 18px;
   background-color: $white-blue;
   border-radius: 50%;
+
+  margin: 0 10px;
 
   position: relative;
 
@@ -62,11 +84,19 @@
 .apartments__body {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+
+  @include mq-under-1440 {
+    justify-content: space-evenly;
+  }
 }
 
 .apartments__flat {
   margin-bottom: 54px;
+
+  @include mq-under-1024 {
+    margin-bottom: 30px;
+  }
 }
 
 .apartments__button {
@@ -80,8 +110,6 @@
   color: $white;
   text-transform: uppercase;
 
-  //padding: 0 190px;
-
   display: inline-block;
 
   &:hover {
@@ -90,6 +118,15 @@
 
   &:active {
     background-color: $light-blue;
+  }
+
+  @include mq-under-1024 {
+    height: 50px;
+    min-width: 400px
+  }
+
+  @include mq-under-768 {
+    min-width: 280px;
   }
 }
 

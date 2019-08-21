@@ -7,10 +7,30 @@
 
   display: flex;
   justify-content: space-between;
+
+  @include mq-under-1280 {
+    min-height: 170px;
+  }
+
+  @include mq-under-1024 {
+    padding: 30px 0;
+
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  @include mq-under-768 {
+    padding: 20px 10px;
+  }
 }
 
 .form-block__agitation {
   padding: 50px 0 0 51px;
+
+  @include mq-under-1024 {
+    text-align: center;
+    padding: 0;
+  }
 }
 
 .form-block__h2 {
@@ -19,22 +39,43 @@
   letter-spacing: 0.03em;
 
   margin-bottom: 15px;
+
+  @include mq-under-1024 {
+    font-size: 24px;
+  }
 }
 
 .form-block__text {
   font-size: 18px;
   letter-spacing: 0.035em;
+
+  @include mq-under-1024 {
+    font-size: 16px;
+  }
 }
 
 .form-block__form {
   padding: 63px 106px 0 0;
 
   display: flex;
+
+  @include mq-under-1280 {
+    padding: 50px 50px 0 0;
+  }
+
+  @include mq-under-1024 {
+    padding: 30px 0 0;
+  }
+
+  @include mq-under-768 {
+    flex-flow: column;
+  }
 }
 
 .form-block__wrap {
   display: flex;
   flex-flow: column;
+
 }
 
 .form-block__input {
@@ -53,6 +94,11 @@
   &:hover, &:focus {
     border: 1px solid $light-blue;
   }
+
+  @include mq-under-768 {
+    height: 40px;
+    min-width: 300px;
+  }
 }
 
 .form-block__button {
@@ -65,7 +111,6 @@
   text-transform: uppercase;
   color: $white;
 
-  //padding: 0 40px 0 47px;
   margin-left: 54px;
 
   &:hover {
@@ -74,5 +119,15 @@
 
   &:active {
     background-color: $grey;
+  }
+
+  @include mq-under-1280 {
+    margin-left: 30px;
+  }
+
+  @include mq-under-768 {
+    height: 40px;
+
+    margin: 20px 0 0;
   }
 }

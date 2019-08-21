@@ -3,8 +3,8 @@ module.exports = function chooseData() {
   const apartments = require('./json/apartments');
   const arrayLen = apartments.length;
 
-  const moreShowCount = 2;
-  let shownRooms = 6;
+  const moreShowCount = 20;
+  let shownRooms = 12;
   let isEmpty = false;
 
   return function (type, desc) {

@@ -10,8 +10,23 @@
   align-items: center;
   justify-content: space-between;
 
-  @include mq-under-1685 {
-    padding: 0 ;
+  position: relative;
+
+  @include mq-under-1720 {
+    padding: 0 70px;
+  }
+
+  @include mq-under-1440 {
+    padding: 0 100px;
+  }
+
+  @include mq-under-1024 {
+    height: 100px;
+    padding: 0 50px;
+  }
+
+  @include mq-under-768 {
+    padding: 0 20px;
   }
 }
 
@@ -22,12 +37,76 @@
 
 .header__logo {
   max-height: 85px;
+
+  @include mq-under-1024 {
+    max-height: 70px;
+  }
+}
+
+.header__menu {
+  margin-left: 50px;
+
+  display: none;
+
+  &:hover {
+    color: orange;
+  }
+
+  &:active {
+    color: red;
+  }
+
+  @include mq-under-1440 {
+    display: block;
+  }
+
+  @include mq-under-768 {
+    margin-left: 20px;
+  }
 }
 
 .header__list {
   display: flex;
-
   margin-left: 125px;
+
+  @include mq-under-1720 {
+    margin-left: 50px
+  }
+
+  @include mq-under-1440 {
+    background-color: $dark-green;
+    border-radius: 0 0 5px 5px;
+
+    padding: 20px 0 20px 20px;
+    margin-left: 0;
+
+    display: none;
+    position: absolute;
+    top: 126px;
+    left: 180px;
+    z-index: 10;
+  }
+
+  @include mq-under-1280 {
+    left: 0;
+  }
+
+  @include mq-under-1024 {
+    min-height: 300px;
+
+    padding: 30px 20px 30px 50px;
+
+    flex-flow: column;
+    justify-content: space-between;
+
+    top: 100px;
+  }
+
+
+}
+
+.header__list_visible {
+  display: flex;
 }
 
 .header__anchor {
@@ -44,18 +123,35 @@
   &:active {
     color: $light-green;
   }
+
+  @include mq-under-1720 {
+    margin-right: 30px;
+  }
 }
 
 .header__contact {
+  min-width: 217px;
   color: $white;
+
+  @include mq-under-1024 {
+    min-width: 100px;
+  }
 }
 
 .header__number {
   font-size: 32px;
   line-height: 45px;
   letter-spacing: 0;
+
+  @include mq-under-1024 {
+    font-size: 24px;
+  }
 }
 
 .header__text {
   font-size: 20px;
+
+  @include mq-under-1024 {
+    font-size: 18px;
+  }
 }
