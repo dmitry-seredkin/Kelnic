@@ -19,6 +19,8 @@ const typesArray = [
   },
 ];
 
+const roomsArray = ['Студия', 'Однокомнатная', 'Двухкомнатная', 'Трехкомнатная', 'Четырехкомнатная'];
+
 function chooseStyle(type) {
   const index = type || 0;
   return typesArray[index % 3];
@@ -33,13 +35,15 @@ function addDiscount(discount) {
 
 export default function makeNewCard(data) {
   const styleObj = chooseStyle(data.type);
+  const roomHeader = `${roomsArray[data.rooms]} ${data.number}`;
+  const price = data.price.toLocaleString();
   return (`
     <div class="${styleObj.cardClass}">
         <div class="card__wrap">
             <img src="images/${data.img}.png" alt="План квартиры" />
         </div>
         <div class="card__body">
-            <h3 class="card__header">${data.header}</h3>
+            <h3 class="card__header">${roomHeader}</h3>
             <div class="card__info">
                 <p class="card__rectangle"></p>
                 <p class="card__style">${data.style}</p>
@@ -50,7 +54,7 @@ export default function makeNewCard(data) {
                     <span class="card__text_font-size_13"> этаж</span>
                 </p>
             </div>
-            <p class="card__price">${data.price} руб.</p>     
+            <p class="card__price">${price} руб.</p>     
         </div>
         <p class="${styleObj.statusClass}">${styleObj.status}</p>
         ${addDiscount(data.discount)}

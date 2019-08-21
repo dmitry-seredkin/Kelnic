@@ -122,10 +122,12 @@ include ../card/card
 section.apartments
     .apartments__head
         span Сортировать по:
-        button.apartments__sort-button Цене
-        button.apartments__sort-button Комнатам
+        button(data-button-type="price").apartments__sort-button Цене
+        button(data-button-type="price-dir").apartments__sort-dir
+        button(data-button-type="rooms").apartments__sort-button Комнатам
+        button(data-button-type="rooms-dir").apartments__sort-dir
     .apartments__body
         each elem in dataArray
             .apartments__flat
                 +card(elem)
-    button.apartments__button Показать еще 20
+    button(data-button-type="show").apartments__button Показать еще 20

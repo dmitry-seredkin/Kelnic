@@ -1,0 +1,256 @@
+[
+  {
+    "img": "R1",
+    "rooms": 0,
+    "number": "№44",
+    "style": "без отделки",
+    "square": 28,
+    "floorNumber": "12/14",
+    "price": 1900000,
+    "type": 1
+  },
+  {
+    "img": "R2",
+    "rooms": 1,
+    "number": "№666",
+    "style": "базовая отделка",
+    "square": 66,
+    "floorNumber": "6/6",
+    "price": 1666666,
+    "type": 0
+  },
+  {
+    "img": "R3",
+    "rooms": 2,
+    "number": "№567",
+    "style": "черновая отделка",
+    "square": 65.6,
+    "floorNumber": "7/14",
+    "price": 5900000,
+    "type": 2
+  },
+  {
+    "img": "R4",
+    "rooms": 3,
+    "number": "№45",
+    "style": "без отделки",
+    "square": 56,
+    "floorNumber": "1/14",
+    "price": 12900000,
+    "type": 1
+  },
+  {
+    "img": "R5",
+    "rooms": 0,
+    "number": "№25",
+    "style": "черновая отделка",
+    "square": 18,
+    "floorNumber": "12/14",
+    "price": 1900000,
+    "type": 1,
+    "discount": 17,
+    "shock": true
+  },
+  {
+    "img": "R6",
+    "rooms": 4,
+    "number": "№259",
+    "style": "черновая отделка",
+    "square": 98,
+    "floorNumber": "14/14",
+    "price": 23900000,
+    "type": 1,
+    "discount": 6
+  },
+  {
+    "img": "R7",
+    "rooms": 1,
+    "number": "№56",
+    "style": "без отделки",
+    "square": 36,
+    "floorNumber": "3/6",
+    "price": 5666666,
+    "type": 0
+  },
+  {
+    "img": "R8",
+    "rooms": 3,
+    "number": "№46",
+    "style": "черновая отделка",
+    "square": 86,
+    "floorNumber": "1/6",
+    "price": 5696664,
+    "type": 0
+  },
+  {
+    "img": "R9",
+    "rooms": 1,
+    "number": "№2",
+    "style": "черновая отделка",
+    "square": 18,
+    "floorNumber": "3/14",
+    "price": 1200000,
+    "type": 1,
+    "discount": 9,
+    "shock": true
+  },
+  {
+    "img": "R10",
+    "rooms": 0,
+    "number": "№12",
+    "style": "черновая отделка",
+    "square": 38,
+    "floorNumber": "6/14",
+    "price": 1500500,
+    "type": 1,
+    "discount": 6
+  },
+  {
+    "img": "R11",
+    "rooms": 1,
+    "number": "№8",
+    "style": "черновая отделка",
+    "square": 48,
+    "floorNumber": "3/14",
+    "price": 6200000,
+    "type": 1
+  },
+  {
+    "img": "R12",
+    "rooms": 2,
+    "number": "№23",
+    "style": "базовая отделка",
+    "square": 48,
+    "floorNumber": "3/14",
+    "price": 5255006,
+    "type": 1,
+    "discount": 6
+  },
+  {
+    "img": "R1",
+    "rooms": 0,
+    "number": "№44",
+    "style": "без отделки",
+    "square": 28,
+    "floorNumber": "12/14",
+    "price": 1900000,
+    "type": 1
+  },
+  {
+    "img": "R2",
+    "rooms": 1,
+    "number": "№666",
+    "style": "базовая отделка",
+    "square": 66,
+    "floorNumber": "6/6",
+    "price": 1666666,
+    "type": 0
+  },
+  {
+    "img": "R3",
+    "rooms": 2,
+    "number": "№567",
+    "style": "черновая отделка",
+    "square": 65.6,
+    "floorNumber": "7/14",
+    "price": 5900000,
+    "type": 2
+  },
+  {
+    "img": "R4",
+    "rooms": 3,
+    "number": "№45",
+    "style": "без отделки",
+    "square": 56,
+    "floorNumber": "1/14",
+    "price": 12900000,
+    "type": 1
+  },
+  {
+    "img": "R5",
+    "rooms": 0,
+    "number": "№25",
+    "style": "черновая отделка",
+    "square": 18,
+    "floorNumber": "12/14",
+    "price": 1900000,
+    "type": 1,
+    "discount": 17,
+    "shock": true
+  },
+  {
+    "img": "R6",
+    "rooms": 4,
+    "number": "№259",
+    "style": "черновая отделка",
+    "square": 98,
+    "floorNumber": "14/14",
+    "price": 23900000,
+    "type": 1,
+    "discount": 6
+  },
+  {
+    "img": "R7",
+    "rooms": 1,
+    "number": "№56",
+    "style": "без отделки",
+    "square": 36,
+    "floorNumber": "3/6",
+    "price": 5666666,
+    "type": 0
+  },
+  {
+    "img": "R8",
+    "rooms": 3,
+    "number": "№46",
+    "style": "черновая отделка",
+    "square": 86,
+    "floorNumber": "1/6",
+    "price": 5696664,
+    "type": 0
+  },
+  {
+    "img": "R9",
+    "rooms": 1,
+    "number": "№2",
+    "style": "черновая отделка",
+    "square": 18,
+    "floorNumber": "3/14",
+    "price": 1200000,
+    "type": 1,
+    "discount": 9,
+    "shock": true
+  },
+  {
+    "img": "R10",
+    "rooms": 0,
+    "number": "№12",
+    "style": "черновая отделка",
+    "square": 38,
+    "floorNumber": "6/14",
+    "price": 1500500,
+    "type": 1,
+    "discount": 6
+  },
+  {
+    "img": "R11",
+    "rooms": 1,
+    "number": "№8",
+    "style": "черновая отделка",
+    "square": 48,
+    "floorNumber": "3/14",
+    "price": 6200000,
+    "type": 1
+  },
+  {
+    "img": "R12",
+    "rooms": 2,
+    "number": "№23",
+    "style": "базовая отделка",
+    "square": 48,
+    "floorNumber": "3/14",
+    "price": 5255006,
+    "type": 1,
+    "discount": 6
+  }
+]
