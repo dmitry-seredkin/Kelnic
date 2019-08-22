@@ -4,7 +4,7 @@
 
   text-align: center;
 
-  padding: 29px 105px 75px;
+  padding: 28px 105px 75px;
 
   @include mq-under-1024 {
     padding: 20px 40px 30px;
@@ -20,7 +20,7 @@
   color: $dark-green;
   text-align: left;
 
-  margin-bottom: 48px;
+  margin-bottom: 45px;
 
   display: flex;
   align-items: center;
@@ -40,7 +40,12 @@
 
   color: inherit;
 
-  padding-left: 10px;
+  padding-bottom: 2px;
+  margin-left: 10px;
+
+  &:hover {
+    border-bottom: 1px dashed $light-blue;
+  }
 }
 
 .apartments__sort-dir {
@@ -49,7 +54,7 @@
   background-color: $white-blue;
   border-radius: 50%;
 
-  margin: 0 10px;
+  margin: 0 6px 0 10px;
 
   position: relative;
 
@@ -69,11 +74,11 @@
   }
 
   &:hover {
-    background-color: $red-yellow;
+    background-color: $bg-hover;
   }
 
   &:active {
-    background-color: $grey;
+    background-color: $bg-active;
   }
 }
 
@@ -106,9 +111,9 @@
   border-radius: 3px;
 
   font-size: 14px;
-  letter-spacing: 0.10em;
   color: $white;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
 
   display: inline-block;
 

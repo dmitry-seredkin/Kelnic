@@ -2,7 +2,7 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 
-@import "fonts/fonts";
+//@import "fonts/fonts";
 
 @import "common.blocks/header/header";
 @import "common.blocks/card/card";
@@ -20,7 +20,7 @@
 
   font-family: "Open Sans", Arial, sans-serif;
   color: $white;
-  letter-spacing: 0.03em;
+  letter-spacing: 0;
 
   padding-bottom: 100px;
 
@@ -39,9 +39,8 @@
   font-size: 48px;
   font-weight: 700;
   color: $dark-green;
-  letter-spacing: 0.04em;
 
-  margin: 66px 0 66px 107px;
+  margin: 65px 0 67px 106px;
 
   @include mq-under-1024 {
     font-size: 36px;
@@ -60,7 +59,7 @@
 }
 
 .app__form {
-  margin-top: 71px;
+  margin-top: 70px;
 
   @include mq-under-1024 {
     margin-top: 30px;

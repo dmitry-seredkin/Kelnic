@@ -33,7 +33,7 @@ function getData(type, sortDir) {
     .catch((error) => console.log(`Error: ${error}`));
 }
 
-function buttonClick() {
+export default function bindClick() {
   let sortPriceDesc = true;
   let sortRoomsDesc = true;
   const apartments = document.querySelector('.apartments');
@@ -60,17 +60,5 @@ function buttonClick() {
       default:
         break;
     }
-  });
-}
-
-export default function getMoreApartments() {
-  const apartmentsButton = document.querySelector('.apartments__button');
-  buttonClick();
-  apartmentsButton.addEventListener('click', () => {
-    console.log('click');
-    fetch('http://localhost:3000/more_flats')
-      .then((response) => response.json())
-      .then((result) => showFlats(result))
-      .catch((error) => console.log(`Error: ${error}`));
   });
 }

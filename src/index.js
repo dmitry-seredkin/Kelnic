@@ -1,10 +1,13 @@
 
 import './style.scss';
+import listenMenuClick from './common.blocks/header/header';
+import listenScroll from './common.blocks/up-button/up-button';
+import listenClick from './common.blocks/apartments/apartments';
 
-import './common.blocks/up-button/up-button';
+function beginWork() {
+  listenMenuClick();
+  listenScroll();
+  listenClick();
+}
 
-import './common.blocks/header/header';
-
-import getMoreApartments from './common.blocks/apartments/apartments';
-
-getMoreApartments();
+beginWork();

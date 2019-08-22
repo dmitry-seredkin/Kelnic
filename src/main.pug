@@ -1,13 +1,17 @@
 
 doctype html
-html
+html(lang="ru")
     head
         title Kelnic Studios
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, initial-scale=1")
+        meta(name="description" content="Kelnic test layout")
+        meta(name="keywords" content="Layout, JS, Kelnic")
+        meta(name="author" content="Dimitry Seredkin")
         link(rel="stylesheet" href=`${htmlWebpackPlugin.files.chunks.main.css}`)
         link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" )
         link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet")
+
     body
         .app
             include common.blocks/header/header

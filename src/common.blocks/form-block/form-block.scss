@@ -1,6 +1,6 @@
 
 .form-block {
-  min-height: 197px;
+  min-height: 198px;
   background-color: $dark-blue;
   border-radius: 3px;
   border-top: 1px solid $light-blue;
@@ -36,9 +36,8 @@
 .form-block__h2 {
   font-size: 34px;
   font-weight: 600;
-  letter-spacing: 0.03em;
 
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   @include mq-under-1024 {
     font-size: 24px;
@@ -47,7 +46,6 @@
 
 .form-block__text {
   font-size: 18px;
-  letter-spacing: 0.035em;
 
   @include mq-under-1024 {
     font-size: 16px;
@@ -55,7 +53,7 @@
 }
 
 .form-block__form {
-  padding: 63px 106px 0 0;
+  padding: 64px 106px 0 0;
 
   display: flex;
 
@@ -80,11 +78,11 @@
 
 .form-block__input {
   height: 47px;
-  min-width: 320px;
+  min-width: 319px;
   border-radius: 2px;
 
-  padding: 0 20px;
-  margin-bottom: 18px;
+  padding: 0 19px;
+  margin-bottom: 17px;
 
   &::placeholder {
     color: $dark-blue;
@@ -102,12 +100,12 @@
 }
 
 .form-block__button {
-  height: 48px;
+  height: 47px;
   min-width: 214px;
   background-color: $sand-yellow;
   border-radius: 2px;
 
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $white;
 

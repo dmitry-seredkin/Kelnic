@@ -4,7 +4,7 @@
   background-color: #002f2f;
   border-bottom: 1px solid $light-green;
 
-  padding: 0 160px 0 106px;
+  padding: 0 159px 0 106px;
 
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@
 
 .header__menu {
   margin-left: 50px;
-
+  user-select: none;
   display: none;
 
   &:hover {
@@ -112,9 +112,9 @@
 .header__anchor {
   font-size: 24px;
   color: $header-text-color;
-  letter-spacing: 0.03em;
+  letter-spacing: 0;
 
-  margin-right: 49px;
+  margin-right: 46px;
 
   &:hover {
     color: $toxic-green;
